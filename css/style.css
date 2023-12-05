@@ -57,11 +57,21 @@ margin: 0 0.25rem;
     color: white;
 }
 #showcase2 {
-    background: #333 url("../img/zeus.jpg") no-repeat center center/cover;
+    background: #333 url("../img/gods.jpg") no-repeat center center/cover;
     height: 100vh;
     color: white;
 }
-#showcase, #showcase1, #showcase2, .showcase-content {
+#showcase3 {
+    background: #333 url("../img/chymera.jpg") no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+}
+#showcase4 {
+    background: #333 url("../img/báje.jpg") no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+}
+#showcase, #showcase1, #showcase2, #showcase3, #showcase4, .showcase-content {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -183,9 +193,24 @@ margin: 0 0.25rem;
     margin: 1rem;
     padding: 1rem;
 }
-.kontakt-text{
-    text-align: center;
-    margin: 1rem;
+input,
+textarea {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+    border: none;
+    background-color: transparent;
+}
+
+input[type="text"],
+input[type="url"],
+textarea {
+    width: 95%;
+}
+
+input[type="radio"] {
+    box-shadow: none;
+}
+.contact-text{
+    text-align: left;
     padding: 1rem;
     font-size: 22px;
     border: 1px solid black;
@@ -196,4 +221,45 @@ margin: 0 0.25rem;
 #what {
     margin: 1rem;
     padding: 1rem;
+}
+#contact ul {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+#contact li {
+    padding: 0.5rem 0;
+    border-bottom: white dotted 2px;
+}
+
+#contact h2 {
+    margin: 1rem 0;
+    padding: 1rem 0;
+}
+
+#contact .container {
+    display: flex;
+}
+
+#contact div {
+    flex: 1;
+}
+
+#contact .contact-img {
+    background: url("../img/hacker.jpg") no-repeat center center/cover;
+}
+@media only screen and (max-width: 600px) {
+    #navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+    }
+
+    #contact .contact-img {
+        display: none;
+    }
 }
